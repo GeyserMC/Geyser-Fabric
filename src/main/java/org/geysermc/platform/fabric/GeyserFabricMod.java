@@ -25,14 +25,19 @@
 
 package org.geysermc.platform.fabric;
 
-import com.mojang.brigadier.builder.LiteralArgumentBuilder;
-import lombok.Setter;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
-import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.server.command.ServerCommandSource;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Path;
+import java.util.Arrays;
+import java.util.Enumeration;
+import java.util.Hashtable;
+import java.util.List;
+import java.util.Map;
+import java.util.UUID;
+import java.util.jar.JarEntry;
+
 import org.apache.logging.log4j.LogManager;
 import org.geysermc.connector.GeyserConnector;
 import org.geysermc.connector.GeyserLogger;
@@ -42,29 +47,36 @@ import org.geysermc.connector.command.GeyserCommand;
 import org.geysermc.connector.common.PlatformType;
 import org.geysermc.connector.configuration.GeyserConfiguration;
 import org.geysermc.connector.dump.BootstrapDumpInfo;
+import org.geysermc.connector.network.translators.item.ItemRegistry;
 import org.geysermc.connector.ping.GeyserLegacyPingPassthrough;
 import org.geysermc.connector.ping.IGeyserPingPassthrough;
 import org.geysermc.connector.utils.FileUtils;
 import org.geysermc.connector.utils.LanguageUtils;
 import org.geysermc.platform.fabric.command.GeyserFabricCommandExecutor;
 import org.geysermc.platform.fabric.command.GeyserFabricCommandManager;
+import org.geysermc.platform.fabric.item.FabricItemRegistry;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Path;
-import java.util.*;
+import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 
-public class GeyserFabricMod implements ModInitializer, GeyserBootstrap {
+import net.fabricmc.api.DedicatedServerModInitializer;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.command.ServerCommandSource;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
-    private static GeyserFabricMod instance;
-
-    @Setter
-    private boolean reloading;
-
+@Environment(EnvType.SERVER)
+public class GeyserFabricMod implements ModInitializer, DedicatedServerModInitializer, GeyserBootstrap {
+	
     private GeyserConnector connector;
-    private Path dataFolder;
+    public static Path dataFolder;
     private List<String> playerCommands;
     private MinecraftServer server;
 
@@ -72,21 +84,27 @@ public class GeyserFabricMod implements ModInitializer, GeyserBootstrap {
     private GeyserFabricConfiguration geyserConfig;
     private GeyserFabricLogger geyserLogger;
     private IGeyserPingPassthrough geyserPingPassthrough;
-
+    public Path path;
+    public Path output;
+    
+    private static Hashtable<String, String> fileCache = new Hashtable<String, String>();
+    
+    public static final Item TEST_ITEM = new Item(new FabricItemSettings().group(ItemGroup.MISC));
+    
     @Override
     public void onInitialize() {
-        instance = this;
-
+    	Registry.register(Registry.ITEM, new Identifier("geysermc:test_item"), TEST_ITEM);
+    }
+    
+    @Override
+    public void onInitializeServer() {
         this.onEnable();
-        if (FabricLoader.getInstance().getEnvironmentType() == EnvType.SERVER) {
-            // Set as an event so we can get the proper IP and port if needed
-            ServerLifecycleEvents.SERVER_STARTED.register(this::startGeyser);
-        }
     }
 
     @Override
     public void onEnable() {
         dataFolder = FabricLoader.getInstance().getConfigDir().resolve("Geyser-Fabric");
+        output = dataFolder.resolve("packs");
         if (!dataFolder.toFile().exists()) {
             //noinspection ResultOfMethodCallIgnored
             dataFolder.toFile().mkdir();
@@ -105,31 +123,41 @@ public class GeyserFabricMod implements ModInitializer, GeyserBootstrap {
         this.geyserLogger = new GeyserFabricLogger(geyserConfig.isDebugMode());
 
         GeyserConfiguration.checkGeyserConfiguration(geyserConfig, geyserLogger);
+        
+        FabricItemRegistry.registerItems();
+        this.getGeyserLogger().info(ItemRegistry.ITEMS.toString());
 
         if (server == null) {
             // Server has yet to start
+            // Set as an event so we can get the proper IP and port if needed
+            ServerLifecycleEvents.SERVER_STARTED.register((server) -> {
+                this.server = server;
+                startGeyser();
+            });
+
             // Register onDisable so players are properly kicked
             ServerLifecycleEvents.SERVER_STOPPING.register((server) -> onDisable());
         } else {
             // Server has started and this is a reload
-            startGeyser(this.server);
-            reloading = false;
+            startGeyser();
         }
     }
-
+    
     /**
      * Initialize core Geyser.
      * A function, as it needs to be called in different places depending on if Geyser is being reloaded or not.
-     *
-     * @param server The minecraft server.
      */
-    public void startGeyser(MinecraftServer server) {
-        this.server = server;
-
-        if (this.geyserConfig.getRemote().getAddress().equalsIgnoreCase("auto")) {
+    public void startGeyser() {
+    	//ItemRegistry.addItem(ItemRegistry.ITEMS.size(), new ItemEntry("geysermc:test_item", Registry.ITEM.getRawId(TEST_ITEM), ItemRegistry.ITEMS.size(), 0, false), new StartGamePacket.ItemEntry("geysermc:test_item", (short)ItemRegistry.ITEMS.size()));
+    	
+    	//ItemRegistry.ITEMS.add(new StartGamePacket.ItemEntry("geysermc:test_item", (short) ItemRegistry.ITEMS.size()));
+    	//ItemRegistry.ITEM_ENTRIES.put(ItemRegistry.ITEMS.size(), new ItemEntry("geysermc:test_item", Registry.ITEM.getRawId(TEST_ITEM), ItemRegistry.ITEMS.size(), 0, false));
+    	//ItemRegistry.addToCreativeMenu(ItemRegistry.ITEMS.size(), ItemRegistry.ITEMS.size(), 1, 64);
+    	    	
+    	if (this.geyserConfig.getRemote().getAddress().equalsIgnoreCase("auto")) {
             this.geyserConfig.setAutoconfiguredRemote(true);
             String ip = server.getServerIp();
-            int port = ((GeyserServerPortGetter) server).geyser$getServerPort();
+            int port = server.getServerPort();
             if (ip != null && !ip.isEmpty() && !ip.equals("0.0.0.0")) {
                 this.geyserConfig.getRemote().setAddress(ip);
             }
@@ -155,18 +183,27 @@ public class GeyserFabricMod implements ModInitializer, GeyserBootstrap {
             builder.then(net.minecraft.server.command.CommandManager.literal(
                     command.getKey()).executes(new GeyserFabricCommandExecutor(connector, command.getKey(),
                     !playerCommands.contains(command.getKey()))));
+            
         }
         server.getCommandManager().getDispatcher().register(builder);
     }
+    
+//    static {
+//
+//		for (int count = 1; count <= Registry.ITEM.getEntries().size(); count++) {
+//			if (Registry.ITEM.getId(Registry.ITEM.get(count)).getNamespace().equalsIgnoreCase("minecraft")) {
+//				ItemRegistry.ITEMS.add(new StartGamePacket.ItemEntry(Registry.ITEM.getId(Registry.ITEM.get(count)).getNamespace() + ":" + Registry.ITEM.getId(Registry.ITEM.get(count)).getPath(), (short) ((short)ItemRegistry.ITEMS.size() + 1)));
+//				ItemRegistry.addToCreativeMenu(count, count, Registry.ITEM.get(count).getMaxDamage(), 64);
+//			}
+//		}
+//   	
+//    }
 
     @Override
     public void onDisable() {
         if (connector != null) {
             connector.shutdown();
             connector = null;
-        }
-        if (!reloading) {
-            this.server = null;
         }
     }
 
@@ -222,9 +259,5 @@ public class GeyserFabricMod implements ModInitializer, GeyserBootstrap {
         }
 
         return file;
-    }
-
-    public static GeyserFabricMod getInstance() {
-        return instance;
     }
 }

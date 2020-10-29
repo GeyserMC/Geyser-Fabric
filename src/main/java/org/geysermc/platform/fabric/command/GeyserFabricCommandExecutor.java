@@ -31,7 +31,6 @@ import net.minecraft.server.command.ServerCommandSource;
 import org.geysermc.connector.GeyserConnector;
 import org.geysermc.connector.command.GeyserCommand;
 import org.geysermc.connector.utils.LanguageUtils;
-import org.geysermc.platform.fabric.GeyserFabricMod;
 
 public class GeyserFabricCommandExecutor implements Command<ServerCommandSource> {
 
@@ -55,9 +54,6 @@ public class GeyserFabricCommandExecutor implements Command<ServerCommandSource>
         if (requiresPermission && !source.hasPermissionLevel(2)) {
             sender.sendMessage(LanguageUtils.getLocaleStringLog("geyser.bootstrap.command.permission_fail"));
             return 0;
-        }
-        if (this.commandName.equals("reload")) {
-            GeyserFabricMod.getInstance().setReloading(true);
         }
         getCommand(commandName).execute(sender, new String[0]);
         return 0;
