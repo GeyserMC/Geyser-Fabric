@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/git,java,maven,eclipse,netbeans,jetbrains+all,visualstudiocode
-# Edit at https://www.gitignore.io/gitignore?templates=git,java,maven,eclipse,netbeans,jetbrains+all,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/git,java,maven,eclipse,netbeans,jetbrains+all,visualstudiocode,gradle
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,java,maven,eclipse,netbeans,jetbrains+all,visualstudiocode,gradle
 
 ### Eclipse ###
 .metadata
@@ -232,8 +232,27 @@ nbdist/
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
+.ionide
 
-# End of https://www.gitignore.io/api/git,java,maven,eclipse,netbeans,jetbrains+all,visualstudiocode
+### Gradle ###
+.gradle
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
+
+### Gradle Patch ###
+**/build/
+
+# End of https://www.toptal.com/developers/gitignore/api/git,java,maven,eclipse,netbeans,jetbrains+all,visualstudiocode,gradle
 
 ### Geyser ###
 run/

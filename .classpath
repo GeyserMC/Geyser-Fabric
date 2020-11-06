@@ -369,6 +369,11 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-api-base-0.1.3+12a8474c95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-api-base-0.1.3+12a8474c95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-biome-api-v1-2.0.0+c29459ab95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-biome-api-v1-2.0.0+c29459ab95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
@@ -555,11 +560,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/artifice-0.8.0+1.16-rc1@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/artifice-0.8.0+1.16-rc1@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-api-base-0.1.3+12a8474cfa@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-api-base-0.1.3+12a8474cfa@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
