@@ -17,6 +17,9 @@
   "entrypoints": {
     "server": [
       "org.geysermc.platform.fabric.GeyserFabricMod"
+    ],
+    "polymc": [
+      "io.github.theepicblock.ExampleEntrypoint"
     ]
   },
   "depends": {

@@ -23,11 +23,16 @@ dependencies {
 
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-
+	 
     // PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
     // You may need to force-disable transitiveness on them.
-
-    implementation 'org.geysermc:connector:1.1.0'
+   	
+  	compile files('C:\\Users/thema/Downloads/mcmods/Geyser-master/connector/connector-1.1.0.jar')
+  	
+  	modImplementation "com.github.TheEpicBlock:PolyMc:2.3.0"
+  	
+  	modImplementation group: 'net.devtech', name: 'arrp', version: '0.2.9'
+   	
     shadow 'org.geysermc:connector:1.1.0'
 
     compileOnly 'org.projectlombok:lombok:1.18.4'
@@ -38,11 +43,11 @@ repositories {
     mavenLocal()
 
     maven {
-        url = uri('https://repo.opencollab.dev/maven-releases/')
+        url = uri('https://repo.nukkitx.com/maven-releases/')
     }
 
     maven {
-        url = uri('https://repo.opencollab.dev/maven-snapshots/')
+        url = uri('https://repo.nukkitx.com/maven-snapshots/')
     }
 
     maven {
@@ -52,6 +57,10 @@ repositories {
     maven {
         url = uri('https://oss.sonatype.org/content/repositories/snapshots/')
     }
+    
+    maven {
+		url = 'https://raw.githubusercontent.com/Devan-Kerman/Devan-Repo/master/'
+	}
 }
 
 processResources {

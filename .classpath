@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry output="bin/main" kind="src" path="src/main/java">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry output="bin/main" kind="src" path="src/main/resources">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/org/projectlombok/lombok/1.18.4/lombok-1.18.4-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/org/projectlombok/lombok/1.18.4/lombok-1.18.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/19.0.0/46283be41e938dba9ac928ab98de7be6f7a436f1/annotations-19.0.0-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/19.0.0/efbff6752f67a7c9de3e4251c086a88e23591dfd/annotations-19.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.mojang/patchy/1.1/5e398295fbcb8fb590e3e3bddace13f659792e50/patchy-1.1-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.mojang/patchy/1.1/aef610b34a1be37fa851825f12372b78424d8903/patchy-1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/oshi-project/oshi-core/1.1/1ec1ab1e6ac5a1572edfd0dd9ac95e83684b8a65/oshi-core-1.1-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/oshi-project/oshi-core/1.1/9ddf7b048a8d701be231c0f4f95fd986198fd2d8/oshi-core-1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.4.0/9d45d3dc35711eef7267d8b4fc2c0dc482ef9fd2/jna-4.4.0-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.4.0/cb208278274bf12ebdb56c61bd7407e6f774d65a/jna-4.4.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/platform/3.4.0/e3f70017be8100d3d6923f50b3d2ee17714e9c13/platform-3.4.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j/66.1/57d00b7135ca8fa82311d6b9fd345309e4c46f0b/icu4j-66.1-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j/66.1/72c7519b6d91f7a1f993bd44a99fe95d67211b27/icu4j-66.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.mojang/javabridge/1.0.22/5f5f10138f75ddb87a9ad466c3432f3a7f28a273/javabridge-1.0.22-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.mojang/javabridge/1.0.22/6aa6453aa99a52a5cd91749da1af6ab70e082ab3/javabridge-1.0.22.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.3/36d4348605fd4605d36c8641495f3e78756e454b/jopt-simple-5.0.3-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.3/cdd846cfc4e0f7eefafc02c0f5dce32b9303aa2a/jopt-simple-5.0.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.25.Final/b3cbede36c053a83ccad38ac821814036242f12/netty-all-4.1.25.Final-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.25.Final/d0626cd3108294d1d58c05859add27b4ef21f83b/netty-all-4.1.25.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/org/geysermc/connector/1.1.0/connector-1.1.0-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/org/geysermc/connector/1.1.0/connector-1.1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/org/reflections/reflections/0.9.11/reflections-0.9.11-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/org/reflections/reflections/0.9.11/reflections-0.9.11.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/google/guava/guava/29.0-jre/guava-29.0-jre-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/google/guava/guava/29.0-jre/guava-29.0-jre.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.5/f7d878153e86a1cdddf6b37850e00a9f8bff726f/commons-lang3-3.5-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.5/6c6c702c89bfff3cd9e80b04d668c5e190d588c6/commons-lang3-3.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/caf033a4a7c37b4a8ff3ea084cba591539b0b69/commons-io-2.5-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/2852e6e05fbb95076fc091f6d1780f1f8fe35e0f/commons-io-2.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/11fb3d88ae7e3b757d70237064210ceb954a5a04/commons-codec-1.10-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.5/82604cfeb87b9ab70ed70aa19a137de8ceb21504/jinput-2.0.5-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.5/39c7796b469a600f72380316f6b1f11db6c2c7c4/jinput-2.0.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/net.java.jutils/jutils/1.0.0/e12fe1fda814bd348c1579329c86943d2cd3c6a6/jutils-1.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.mojang/brigadier/1.0.17/36e6dccfa011566fb0c9314d50ecc5a1c0bb2d51/brigadier-1.0.17-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.mojang/brigadier/1.0.17/c6b7dc51dd44379cc751b7504816006e9be4b1e6/brigadier-1.0.17.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.mojang/datafixerupper/4.0.26/56aaa69cfefc74d50051d6e46895a922f47ff22b/datafixerupper-4.0.26-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.mojang/datafixerupper/4.0.26/ebd6690f33871ccee9b6132c6480668ee2e35020/datafixerupper-4.0.26.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/org/geysermc/common/1.1.0/common-1.1.0-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/org/geysermc/common/1.1.0/common-1.1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/net/kyori/adventure-text-serializer-gson/4.1.1/adventure-text-serializer-gson-4.1.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/net/kyori/adventure-text-serializer-gson/4.1.1/adventure-text-serializer-gson-4.1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/github/steveice10/mcprotocollib/1b01b1ffef/mcprotocollib-1b01b1ffef-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/github/steveice10/mcprotocollib/1b01b1ffef/mcprotocollib-1b01b1ffef.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/github/steveice10/mcauthlib/1.3/mcauthlib-1.3-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/github/steveice10/mcauthlib/1.3/mcauthlib-1.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/1.6.25/de9a1ba1e01d2f3e03a0b5812f4f4e51624a671e/authlib-1.6.25-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/1.6.25/5bd0ce00c1e1f483641f85bccb02d1956dd77ec0/authlib-1.6.25.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.8.1/a698750c16740fd5b3871425f4cb3bbaa87f529d/commons-compress-1.8.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.3/18f4247ff4572a074444572cee34647c43e7c9c7/httpclient-4.3.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.2/31fbbff1ddbf98f3aa7377c94d33b0447c646b6e/httpcore-4.3.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.2.1/47e3859e2123a05a82e75b34af52719f2c18860c/fastutil-8.2.1-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.2.1/5ad88f325e424f8dbc2be5459e21ea5cab3864e9/fastutil-8.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.8.1/a5edb6b8c77843c8be98e0cb1f875699e76ee122/log4j-api-2.8.1-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.8.1/e801d13612e22cad62a3f4f3fe7fdbe6334a8e72/log4j-api-2.8.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.8.1/a0a7f683da620c345b502fff04d1e46cde2e8d9/log4j-core-2.8.1-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.8.1/4ac28ff2f1ddf05dae3043a190451e8c46b73c31/log4j-core-2.8.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.2.2/b32bcb411ea7a91aab25b1d0309887aae16778df/lwjgl-3.2.2-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.2.2/8ad6294407e15780b43e84929c40e4c5e997972e/lwjgl-3.2.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.2.2/d20a6df6fcb6308fea22c835d23e0297454d759d/lwjgl-jemalloc-3.2.2-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.2.2/ee8e57a79300f78294576d87c4a587f8c99402e2/lwjgl-jemalloc-3.2.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.2.2/1f60241adab8073234fbe7d38cf9dbc4c28c50b6/lwjgl-openal-3.2.2-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.2.2/2b772a102b0a11ee5f2109a5b136f4dc7c630827/lwjgl-openal-3.2.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.2.2/4f5dffe36ce3f4a35d9d0ea1b7b31cd49e36d58b/lwjgl-opengl-3.2.2-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.2.2/6ac5bb88b44c43ea195a570aab059f63da004cd8/lwjgl-opengl-3.2.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.2.2/3e402df983933dec9d9123e494fa3130b3900ab8/lwjgl-glfw-3.2.2-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.2.2/d3ad4df38e400b8afba1de63f84338809399df5b/lwjgl-glfw-3.2.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.2.2/2eb5cd96aabf2f1abf165dff12ab882878f7dc1d/lwjgl-stb-3.2.2-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.2.2/3b8e6ebc5851dd3d17e37e5cadce2eff2a429f0f/lwjgl-stb-3.2.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.2.2/2fe76dcf2ca02ae0e64ac7c69eb251c09df0e922/lwjgl-tinyfd-3.2.2-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.2.2/fcbe606c8f8da6f8f9a05e2c540eb1ee8632b0e9/lwjgl-tinyfd-3.2.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.11.3/772a37dd77417571e6f119a8d306f0c14c2ee410/text2speech-1.11.3-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.11.3/f378f889797edd7df8d32272c06ca80a1b6b0f58/text2speech-1.11.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/net.fabricmc/tiny-mappings-parser/0.2.2.14/b7020df2520820f670dfaedd2cf23666d24a2aa8/tiny-mappings-parser-0.2.2.14.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.8.2+build.24/2feb7fc5dce9ad4f37d0b4f2c84cdda9742ba52f/sponge-mixin-0.8.2+build.24-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.8.2+build.24/e5a741445d0f425bf3cce946c6cf8c7fb8376b2/sponge-mixin-0.8.2+build.24.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/net.fabricmc/tiny-remapper/0.3.0.70/a597892ae45ba464f80a5d1c22ee70262bd5610c/tiny-remapper-0.3.0.70-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/net.fabricmc/tiny-remapper/0.3.0.70/8a79e9b88fbc6b49dc4312bb1efcf6c4a8c818df/tiny-remapper-0.3.0.70.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/net.fabricmc/access-widener/1.0.0/67214f6fae7f8c54af0d7bb40b9977a1a5a5580e/access-widener-1.0.0-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/net.fabricmc/access-widener/1.0.0/22264da061b12132ecfe15f68e0a90a11b14e6f9/access-widener-1.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/net.fabricmc/fabric-loader-sat4j/2.3.5.4/f8fe5353909430b5845ae24ea1e01d83f12ad916/fabric-loader-sat4j-2.3.5.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.google.jimfs/jimfs/1.2-fabric/6cb00cae551b619536022d7725889c7d63b459/jimfs-1.2-fabric-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.google.jimfs/jimfs/1.2-fabric/c3705f1acc511edb8ad4fd4e86ae4634a25315bb/jimfs-1.2-fabric.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.m2/repository/com/github/CloudburstMC/Protocol/bedrock-v408/02f46a8700/bedrock-v408-02f46a8700.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.m2/repository/com/github/CloudburstMC/Protocol/bedrock-v407/02f46a8700/bedrock-v407-02f46a8700.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.m2/repository/com/github/CloudburstMC/Protocol/bedrock-v390/02f46a8700/bedrock-v390-02f46a8700.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.m2/repository/com/github/CloudburstMC/Protocol/bedrock-v389/02f46a8700/bedrock-v389-02f46a8700.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.m2/repository/com/github/CloudburstMC/Protocol/bedrock-v388/02f46a8700/bedrock-v388-02f46a8700.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.m2/repository/com/github/CloudburstMC/Protocol/bedrock-v361/02f46a8700/bedrock-v361-02f46a8700.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.m2/repository/com/github/CloudburstMC/Protocol/bedrock-v354/02f46a8700/bedrock-v354-02f46a8700.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.m2/repository/com/github/CloudburstMC/Protocol/bedrock-v340/02f46a8700/bedrock-v340-02f46a8700.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.m2/repository/com/github/CloudburstMC/Protocol/bedrock-v332/02f46a8700/bedrock-v332-02f46a8700.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.m2/repository/com/github/CloudburstMC/Protocol/bedrock-v313/02f46a8700/bedrock-v313-02f46a8700.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.m2/repository/com/github/CloudburstMC/Protocol/bedrock-v291/02f46a8700/bedrock-v291-02f46a8700.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.m2/repository/com/github/CloudburstMC/Protocol/bedrock-common/02f46a8700/bedrock-common-02f46a8700.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nimbusds/nimbus-jose-jwt/4.41.2/nimbus-jose-jwt-4.41.2-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nimbusds/nimbus-jose-jwt/4.41.2/nimbus-jose-jwt-4.41.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.0/4ebd60354f49eaac2afe314ae2c7f21191807473/asm-9.0-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.0/af582ff60bc567c42d931500c3fdc20e0141ddf9/asm-9.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/9.0/69c8779db3098fab77bf462930e4edc16ef7f5f3/asm-analysis-9.0-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/9.0/4630afefbb43939c739445dde0af1a5729a0fb4e/asm-analysis-9.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/9.0/e05dba04ed16700761c397b6d665de383478c929/asm-commons-9.0-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/9.0/5a34a3a9ac44f362f35d1b27932380b0031a3334/asm-commons-9.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/9.0/ef07227f641685b6473fd0fbb4931afd6539df1a/asm-tree-9.0-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/9.0/9df939f25c556b0c7efe00701d47e77a49837f24/asm-tree-9.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-util/9.0/26ec51a908081b110c9fc86be0f4bbf4d30e408b/asm-util-9.0-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-util/9.0/7c059a94ab5eed3347bf954e27fab58e52968848/asm-util-9.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.gradle/caches/fabric-loom/1.16.3-mapped-net.fabricmc.yarn-1.16.3+build.28-v2/minecraft-1.16.3-mapped-net.fabricmc.yarn-1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/PolyMc-2.3.0@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/PolyMc-2.3.0@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-api-0.23.0+build.410-1.16@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-api-0.23.0+build.410-1.16@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/arrp-0.2.9@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/arrp-0.2.9@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-biome-api-v1-2.0.0+c29459ab95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-biome-api-v1-2.0.0+c29459ab95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-blockrenderlayer-v1-1.1.4+c6a8ea8995@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-blockrenderlayer-v1-1.1.4+c6a8ea8995@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-command-api-v1-1.0.8+5ce5339895@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-command-api-v1-1.0.8+5ce5339895@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-commands-v0-0.2.0+52d3083695@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-commands-v0-0.2.0+52d3083695@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-containers-v0-0.1.8+045df74f95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-containers-v0-0.1.8+045df74f95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-content-registries-v0-0.1.9+059ea86695@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-content-registries-v0-0.1.9+059ea86695@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-crash-report-info-v1-0.1.2+b7f9825d95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-crash-report-info-v1-0.1.2+b7f9825d95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-events-interaction-v0-0.4.1+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-events-interaction-v0-0.4.1+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-events-lifecycle-v0-0.2.0+16acbe5b95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-events-lifecycle-v0-0.2.0+16acbe5b95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-game-rule-api-v1-1.0.2+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-game-rule-api-v1-1.0.2+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-item-api-v1-1.2.0+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-item-api-v1-1.2.0+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-item-groups-v0-0.2.0+438f963695@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-item-groups-v0-0.2.0+438f963695@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-key-binding-api-v1-1.0.1+730711c695@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-key-binding-api-v1-1.0.1+730711c695@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-keybindings-v0-0.2.0+3fa9f7c595@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-keybindings-v0-0.2.0+3fa9f7c595@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-lifecycle-events-v1-1.2.0+74cc3b2095@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-lifecycle-events-v1-1.2.0+74cc3b2095@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-loot-tables-v1-1.0.1+432ea18895@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-loot-tables-v1-1.0.1+432ea18895@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-mining-levels-v0-0.1.2+b764ce9995@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-mining-levels-v0-0.1.2+b764ce9995@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-models-v0-0.1.1+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-models-v0-0.1.1+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-networking-blockentity-v0-0.2.5+b50ffc7b95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-networking-blockentity-v0-0.2.5+b50ffc7b95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-networking-v0-0.1.10+e00ecb5f95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-networking-v0-0.1.10+e00ecb5f95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-object-builder-api-v1-1.9.0+c270b09895@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-object-builder-api-v1-1.9.0+c270b09895@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-object-builders-v0-0.7.0+432ea18895@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-object-builders-v0-0.7.0+432ea18895@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-particles-v1-0.2.2+fb0d9b0e95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-particles-v1-0.2.2+fb0d9b0e95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-registry-sync-v0-0.5.2+3c53fe3395@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-registry-sync-v0-0.5.2+3c53fe3395@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-renderer-api-v1-0.3.1+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-renderer-api-v1-0.3.1+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-renderer-indigo-0.4.1+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-renderer-indigo-0.4.1+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-renderer-registries-v1-2.2.0+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-renderer-registries-v1-2.2.0+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-rendering-data-attachment-v1-0.1.4+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-rendering-data-attachment-v1-0.1.4+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-rendering-fluids-v1-0.1.12+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-rendering-fluids-v1-0.1.12+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-rendering-v0-1.1.1+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-rendering-v0-1.1.1+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-rendering-v1-1.3.1+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-rendering-v1-1.3.1+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-resource-loader-v0-0.3.1+facf3bbf95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-resource-loader-v0-0.3.1+facf3bbf95@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-screen-handler-api-v1-1.1.0+8724984195@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-screen-handler-api-v1-1.1.0+8724984195@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-structure-api-v1-1.1.0+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-structure-api-v1-1.1.0+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-tag-extensions-v0-1.0.3+ac8e8c5995@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-tag-extensions-v0-1.0.3+ac8e8c5995@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-textures-v0-1.0.4+eae12eb895@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-textures-v0-1.0.4+eae12eb895@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-tool-attribute-api-v1-1.2.3+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-tool-attribute-api-v1-1.2.3+f8ac1db295@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/artifice-0.8.0+1.16-rc1@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/artifice-0.8.0+1.16-rc1@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-api-base-0.1.3+12a8474cfa@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-api-base-0.1.3+12a8474cfa@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-loader-0.10.6+build.214@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/fabric-loader-0.10.6+build.214@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/lithium-fabric-mc1.16.1-0.5.1@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2-sources.jar" kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-Fabric/.gradle/loom-cache/remapped_mods/lithium-fabric-mc1.16.1-0.5.1@net.fabricmc.yarn.1_16_3.1.16.3+build.28-v2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.9.8/jackson-dataformat-yaml-2.9.8-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.9.8/jackson-dataformat-yaml-2.9.8.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.8/jackson-datatype-jsr310-2.9.8-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.8/jackson-datatype-jsr310-2.9.8.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-int-int-maps/8.3.1/fastutil-int-int-maps-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-int-int-maps/8.3.1/fastutil-int-int-maps-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-int-float-maps/8.3.1/fastutil-int-float-maps-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-int-float-maps/8.3.1/fastutil-int-float-maps-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-long-long-maps/8.3.1/fastutil-long-long-maps-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-long-long-maps/8.3.1/fastutil-long-long-maps-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-object-long-maps/8.3.1/fastutil-object-long-maps-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-object-long-maps/8.3.1/fastutil-object-long-maps-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-int-byte-maps/8.3.1/fastutil-int-byte-maps-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-int-byte-maps/8.3.1/fastutil-int-byte-maps-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-int-double-maps/8.3.1/fastutil-int-double-maps-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-int-double-maps/8.3.1/fastutil-int-double-maps-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-int-boolean-maps/8.3.1/fastutil-int-boolean-maps-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-int-boolean-maps/8.3.1/fastutil-int-boolean-maps-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/github/CloudburstMC/Protocol/common/02f46a8700/common-02f46a8700-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/github/CloudburstMC/Protocol/common/02f46a8700/common-02f46a8700.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-object-int-maps/8.3.1/fastutil-object-int-maps-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-object-int-maps/8.3.1/fastutil-object-int-maps-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-object-byte-maps/8.3.1/fastutil-object-byte-maps-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-object-byte-maps/8.3.1/fastutil-object-byte-maps-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-object-object-maps/8.3.1/fastutil-object-object-maps-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-object-object-maps/8.3.1/fastutil-object-object-maps-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/io/netty/netty-resolver-dns/4.1.43.Final/netty-resolver-dns-4.1.43.Final-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/io/netty/netty-resolver-dns/4.1.43.Final/netty-resolver-dns-4.1.43.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/net/kyori/adventure-text-serializer-legacy/4.1.1/adventure-text-serializer-legacy-4.1.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/net/kyori/adventure-text-serializer-legacy/4.1.1/adventure-text-serializer-legacy-4.1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/net/kyori/adventure-api/4.1.1/adventure-api-4.1.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/net/kyori/adventure-api/4.1.1/adventure-api-4.1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/net/kyori/examination-string/1.0.0/examination-string-1.0.0-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/net/kyori/examination-string/1.0.0/examination-string-1.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/net/kyori/examination-api/1.0.0/examination-api-1.0.0-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/net/kyori/examination-api/1.0.0/examination-api-1.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/org/checkerframework/checker-qual/3.7.0/checker-qual-3.7.0-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/org/checkerframework/checker-qual/3.7.0/checker-qual-3.7.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.8/jackson-core-2.9.8-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.8/jackson-core-2.9.8.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-int-object-maps/8.3.1/fastutil-int-object-maps-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-int-object-maps/8.3.1/fastutil-int-object-maps-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-int-sets/8.3.1/fastutil-int-sets-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-int-sets/8.3.1/fastutil-int-sets-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-long-object-maps/8.3.1/fastutil-long-object-maps-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-long-object-maps/8.3.1/fastutil-long-object-maps-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-object-sets/8.3.1/fastutil-object-sets-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-object-sets/8.3.1/fastutil-object-sets-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-float-sets/8.3.1/fastutil-float-sets-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-float-sets/8.3.1/fastutil-float-sets-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-long-sets/8.3.1/fastutil-long-sets-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-long-sets/8.3.1/fastutil-long-sets-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-byte-sets/8.3.1/fastutil-byte-sets-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-byte-sets/8.3.1/fastutil-byte-sets-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-double-sets/8.3.1/fastutil-double-sets-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-double-sets/8.3.1/fastutil-double-sets-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-boolean-sets/8.3.1/fastutil-boolean-sets-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-boolean-sets/8.3.1/fastutil-boolean-sets-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/github/steveice10/opennbt/1.3/opennbt-1.3-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/github/steveice10/opennbt/1.3/opennbt-1.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/github/steveice10/packetlib/1.7/packetlib-1.7-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/github/steveice10/packetlib/1.7/packetlib-1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/io/netty/netty-codec-dns/4.1.43.Final/netty-codec-dns-4.1.43.Final-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/io/netty/netty-codec-dns/4.1.43.Final/netty-codec-dns-4.1.43.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/network/raknet/1.6.20/raknet-1.6.20-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/network/raknet/1.6.20/raknet-1.6.20.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/io/netty/netty-handler/4.1.43.Final/netty-handler-4.1.43.Final-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/io/netty/netty-handler/4.1.43.Final/netty-handler-4.1.43.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/io/netty/netty-codec/4.1.43.Final/netty-codec-4.1.43.Final-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/io/netty/netty-codec/4.1.43.Final/netty-codec-4.1.43.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/network/common/1.6.20/common-1.6.20-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/network/common/1.6.20/common-1.6.20.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.43.Final/65b1ff107f900fe50a96926abdee03ea84295c4c/netty-transport-native-epoll-4.1.43.Final-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.43.Final/ab3836b204a1526bd8fc51efcf34d5ee77b58e28/netty-transport-native-epoll-4.1.43.Final-linux-x86_64.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-kqueue/4.1.43.Final/1c68f6543c42cd04cd34a973a5c6ab89d7554981/netty-transport-native-kqueue-4.1.43.Final-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-kqueue/4.1.43.Final/2a3ba5a9faea2b981286f63f82c753962f50c1d5/netty-transport-native-kqueue-4.1.43.Final-osx-x86_64.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.43.Final/netty-transport-native-unix-common-4.1.43.Final-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.43.Final/netty-transport-native-unix-common-4.1.43.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/io/netty/netty-transport/4.1.43.Final/netty-transport-4.1.43.Final-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/io/netty/netty-transport/4.1.43.Final/netty-transport-4.1.43.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/io/netty/netty-buffer/4.1.43.Final/netty-buffer-4.1.43.Final-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/io/netty/netty-buffer/4.1.43.Final/netty-buffer-4.1.43.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/io/netty/netty-resolver/4.1.43.Final/netty-resolver-4.1.43.Final-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/io/netty/netty-resolver/4.1.43.Final/netty-resolver-4.1.43.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/io/netty/netty-common/4.1.43.Final/netty-common-4.1.43.Final-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/io/netty/netty-common/4.1.43.Final/netty-common-4.1.43.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-int-common/8.3.1/fastutil-int-common-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-int-common/8.3.1/fastutil-int-common-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-object-common/8.3.1/fastutil-object-common-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-object-common/8.3.1/fastutil-object-common-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-float-common/8.3.1/fastutil-float-common-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-float-common/8.3.1/fastutil-float-common-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-long-common/8.3.1/fastutil-long-common-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-long-common/8.3.1/fastutil-long-common-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-byte-common/8.3.1/fastutil-byte-common-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-byte-common/8.3.1/fastutil-byte-common-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-double-common/8.3.1/fastutil-double-common-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-double-common/8.3.1/fastutil-double-common-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-boolean-common/8.3.1/fastutil-boolean-common-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-boolean-common/8.3.1/fastutil-boolean-common-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-common/8.3.1/fastutil-common-8.3.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/fastutil/fastutil-common/8.3.1/fastutil-common-8.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/natives/1.0.2/natives-1.0.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/nbt/2.0.1/nbt-2.0.1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/nbt/2.0.1/nbt-2.0.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/nukkitx/math/1.1.0/math-1.1.0-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/nukkitx/math/1.1.0/math-1.1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1-sources.jar" kind="lib" path="C:/Users/thema/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/21.0/b9ed26b8c23fe7cd3e6b463b34e54e5c6d9536d5/guava-21.0-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/21.0/3a3d111be1be1b745edfa7d91678a12d7ed38709/guava-21.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/baf95d8519fc1a11d388f8543cb40cd2bb9d66dc/gson-2.8.0-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.m2/repository/net/minecrell/terminalconsoleappender/1.2.0/terminalconsoleappender-1.2.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/net.fabricmc/dev-launch-injector/0.2.1+build.8/da8bef7e6e2f952da707f282bdb46882a0fce5e3/dev-launch-injector-0.2.1+build.8.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.jline/jline-reader/3.12.1/88d7d2011ebec345d0a5c6237be1e7be864c7ec8/jline-reader-3.12.1-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.jline/jline-reader/3.12.1/4382ab1382c7b6f379377ed5f665dc2f6e1218bc/jline-reader-3.12.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.jline/jline-terminal/3.12.1/3f3b61e6f3eafeba0c289b308926e0f93457140/jline-terminal-3.12.1-sources.jar" kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/org.jline/jline-terminal/3.12.1/c777448314e050d980a6b697c140f3bfe9eb7416/jline-terminal-3.12.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/Downloads/mcmods/Geyser-master/connector/connector-1.1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.gradle/caches/modules-2/files-2.1/net.fabricmc/fabric-loom/0.5-SNAPSHOT/a077ae5dc7f87d55119e25628efaffaa6914cc82/fabric-loom-0.5-SNAPSHOT.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/thema/.gradle/caches/fabric-loom/yarn-1.16.3+build.28-v2-final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+</classpath>

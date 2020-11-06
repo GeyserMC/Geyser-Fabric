@@ -25,6 +25,7 @@
 
 package org.geysermc.platform.fabric;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -38,6 +39,8 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.jar.JarEntry;
 
+import javax.imageio.ImageIO;
+
 import org.apache.logging.log4j.LogManager;
 import org.geysermc.connector.GeyserConnector;
 import org.geysermc.connector.GeyserLogger;
@@ -47,33 +50,54 @@ import org.geysermc.connector.command.GeyserCommand;
 import org.geysermc.connector.common.PlatformType;
 import org.geysermc.connector.configuration.GeyserConfiguration;
 import org.geysermc.connector.dump.BootstrapDumpInfo;
+import org.geysermc.connector.network.translators.item.ItemEntry;
 import org.geysermc.connector.network.translators.item.ItemRegistry;
 import org.geysermc.connector.ping.GeyserLegacyPingPassthrough;
 import org.geysermc.connector.ping.IGeyserPingPassthrough;
 import org.geysermc.connector.utils.FileUtils;
 import org.geysermc.connector.utils.LanguageUtils;
+import org.geysermc.platform.fabric.block.FabricBlockRegistry;
 import org.geysermc.platform.fabric.command.GeyserFabricCommandExecutor;
 import org.geysermc.platform.fabric.command.GeyserFabricCommandManager;
 import org.geysermc.platform.fabric.item.FabricItemRegistry;
 
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
+import com.nukkitx.protocol.bedrock.packet.StartGamePacket;
 
+import io.github.theepicblock.polymc.api.block.BlockPoly;
+import io.github.theepicblock.polymc.api.block.SimpleReplacementPoly;
+import io.github.theepicblock.polymc.api.item.CustomModelDataPoly;
+import io.github.theepicblock.polymc.api.register.PolyRegistry;
+import io.github.theepicblock.polymc.resource.AdvancedResourcePackMaker;
+import io.github.theepicblock.polymc.resource.JsonModel;
+import io.github.theepicblock.polymc.resource.ResourcePackGenerator;
+import io.github.theepicblock.polymc.resource.ResourcePackMaker;
+import net.devtech.arrp.api.RRPCallback;
+import net.devtech.arrp.api.RuntimeResourcePack;
+import net.devtech.arrp.json.blockstate.JBlockModel;
+import net.devtech.arrp.json.models.JModel;
+import net.devtech.arrp.json.models.JTextures;
 import net.fabricmc.api.DedicatedServerModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.loader.ModContainer;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.block.Block;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 @Environment(EnvType.SERVER)
-public class GeyserFabricMod implements ModInitializer, DedicatedServerModInitializer, GeyserBootstrap {
+public class GeyserFabricMod extends PolyRegistry implements ModInitializer, DedicatedServerModInitializer, GeyserBootstrap {
 	
     private GeyserConnector connector;
     public static Path dataFolder;
@@ -85,15 +109,48 @@ public class GeyserFabricMod implements ModInitializer, DedicatedServerModInitia
     private GeyserFabricLogger geyserLogger;
     private IGeyserPingPassthrough geyserPingPassthrough;
     public Path path;
+    public Path assets;
+    
     public Path output;
-    
+        
     private static Hashtable<String, String> fileCache = new Hashtable<String, String>();
-    
+    public static final RuntimeResourcePack RESOURCE_PACK = RuntimeResourcePack.create("geysermc:pack");
     public static final Item TEST_ITEM = new Item(new FabricItemSettings().group(ItemGroup.MISC));
     
     @Override
     public void onInitialize() {
     	Registry.register(Registry.ITEM, new Identifier("geysermc:test_item"), TEST_ITEM);
+    }
+    
+    public void registerPolys(PolyRegistry registry) {
+    	for (int count = 1; count <= Registry.ITEM.getEntries().size(); count++) {
+			Item currentItem = Registry.ITEM.get(count);
+			if (!Registry.ITEM.getId(currentItem).getNamespace().equals("minecraft")) {
+		    	assets = FabricLoader.getInstance().getGameDir().resolve("assets/" + FabricLoader.getInstance().getModContainer(Registry.ITEM.getId(currentItem).toString()) + "models/" + Registry.ITEM.getId(currentItem).getPath() + ".json");
+				registry.registerItemPoly(currentItem, new CustomModelDataPoly(registry.getCMDManager(), currentItem, Items.STICK));			    
+				BufferedImage texture = null;
+				try {
+					texture = ImageIO.read(new File(FabricLoader.getInstance().getGameDir() + "resources/" + Registry.ITEM.getId(currentItem).getNamespace() + "/textures/item/" + Registry.ITEM.getId(currentItem).getPath() + ".png"));
+					
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+				RESOURCE_PACK.addTexture(Registry.ITEM.getId(currentItem), texture);
+				this.getGeyserLogger().info(texture.toString());
+				new JModel();
+				RESOURCE_PACK.addModel(JModel.model(Registry.ITEM.getId(currentItem).getNamespace() + ":" + currentItem.getName()).parent("item/generated").textures(new JTextures().layer0(Registry.ITEM.getId(currentItem).getNamespace() + ":item/" + Registry.ITEM.getId(currentItem).getPath())), Registry.ITEM.getId(currentItem));
+			}
+    	}
+    	    	
+    	for (int count = 1; count <= Registry.BLOCK.getEntries().size(); count++) {
+			Block currentBlock = Registry.BLOCK.get(count);
+			if (!Registry.BLOCK.getId(currentBlock).getNamespace().equals("minecraft")) {
+				registry.registerBlockPoly(currentBlock, new SimpleReplacementPoly(currentBlock));
+				RESOURCE_PACK.addModel(JModel.model(Registry.BLOCK.getId(currentBlock).getNamespace() + ":" + currentBlock.getName()).parent("block/cube_all").textures(new JTextures().particle(Registry.BLOCK.getId(currentBlock).getNamespace() + ":block/" + currentBlock.getName()).var("all", Registry.BLOCK.getId(currentBlock).getNamespace() + ":block/" + Registry.BLOCK.getId(currentBlock).getPath())), Registry.BLOCK.getId(currentBlock));
+			}
+    	}
+    	
+    	RRPCallback.EVENT.register(a -> a.add(RESOURCE_PACK));
     }
     
     @Override
@@ -124,8 +181,9 @@ public class GeyserFabricMod implements ModInitializer, DedicatedServerModInitia
 
         GeyserConfiguration.checkGeyserConfiguration(geyserConfig, geyserLogger);
         
-        FabricItemRegistry.registerItems();
-        this.getGeyserLogger().info(ItemRegistry.ITEMS.toString());
+        //FabricItemRegistry.registerItems();
+        
+        //this.getGeyserLogger().info(ItemRegistry.ITEMS.toString());
 
         if (server == null) {
             // Server has yet to start
@@ -141,6 +199,26 @@ public class GeyserFabricMod implements ModInitializer, DedicatedServerModInitia
             // Server has started and this is a reload
             startGeyser();
         }
+    }
+    
+    public void extractMods() {
+    	
+    	File file = new File(FabricLoader.getInstance().getGameDir().resolve("temp").toString());
+    	
+    	file.mkdir();
+    	
+    	String source = FabricLoader.getInstance().getGameDir().resolve("mods").toString();
+    	File inputDir = new File(source);
+    	
+    	String destination = FabricLoader.getInstance().getGameDir().resolve("temp").toString();
+    	File outputDir = new File(destination);
+    	
+    	try {
+			org.apache.commons.io.FileUtils.copyDirectory(inputDir, outputDir);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+    
     }
     
     /**

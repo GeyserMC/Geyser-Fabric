@@ -5,6 +5,7 @@ import org.geysermc.connector.network.translators.item.ItemRegistry;
 
 import com.nukkitx.protocol.bedrock.packet.StartGamePacket;
 
+import io.github.theepicblock.polymc.api.register.PolyRegistry;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.registry.Registry;
@@ -18,12 +19,12 @@ public class FabricItemRegistry {
 				if (!(currentItem instanceof BlockItem)) {
 					ItemRegistry.ITEMS.add(new StartGamePacket.ItemEntry(Registry.ITEM.getId(currentItem).getNamespace() + ":" + Registry.ITEM.getId(currentItem).getPath(), (short) ((short)Registry.ITEM.getRawId(currentItem))));
 					ItemRegistry.ITEM_ENTRIES.put(count, new ItemEntry(Registry.ITEM.getId(currentItem).getNamespace() + ":" + Registry.ITEM.getId(currentItem).getPath(), Registry.ITEM.getRawId(currentItem), Registry.ITEM.getRawId(currentItem), 0, false));
-					ItemRegistry.addToCreativeMenu(count, Registry.ITEM.getRawId(currentItem), currentItem.getMaxDamage(), 0);		
+					ItemRegistry.addToCreativeMenu(count, Registry.ITEM.getRawId(currentItem), currentItem.getMaxDamage(), 0);
 				}
 				else {
 					ItemRegistry.ITEMS.add(new StartGamePacket.ItemEntry(Registry.ITEM.getId(currentItem).getNamespace() + ":" + Registry.ITEM.getId(currentItem).getPath(), (short) ((short)Registry.ITEM.getRawId(currentItem))));
 					ItemRegistry.ITEM_ENTRIES.put(count, new ItemEntry(Registry.ITEM.getId(currentItem).getNamespace() + ":" + Registry.ITEM.getId(currentItem).getPath(), Registry.ITEM.getRawId(currentItem), Registry.ITEM.getRawId(currentItem), 0, true));
-					ItemRegistry.addToCreativeMenu(count, Registry.ITEM.getRawId(currentItem), currentItem.getMaxDamage(), 0);		
+					ItemRegistry.addToCreativeMenu(count, Registry.ITEM.getRawId(currentItem), currentItem.getMaxDamage(), 0);
 				}
 			}
 		}
