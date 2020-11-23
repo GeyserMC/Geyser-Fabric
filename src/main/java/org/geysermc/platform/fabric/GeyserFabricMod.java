@@ -30,6 +30,7 @@ import lombok.Setter;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
+import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.command.ServerCommandSource;
@@ -48,6 +49,8 @@ import org.geysermc.connector.utils.FileUtils;
 import org.geysermc.connector.utils.LanguageUtils;
 import org.geysermc.platform.fabric.command.GeyserFabricCommandExecutor;
 import org.geysermc.platform.fabric.command.GeyserFabricCommandManager;
+import org.geysermc.platform.fabric.command.GeyserFabricEvents;
+import org.geysermc.platform.fabric.command.GeyserFabricWorldManager;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -71,6 +74,7 @@ public class GeyserFabricMod implements ModInitializer, GeyserBootstrap {
     private GeyserFabricCommandManager geyserCommandManager;
     private GeyserFabricConfiguration geyserConfig;
     private GeyserFabricLogger geyserLogger;
+    private GeyserFabricWorldManager worldManager;
     private IGeyserPingPassthrough geyserPingPassthrough;
 
     @Override
@@ -110,6 +114,9 @@ public class GeyserFabricMod implements ModInitializer, GeyserBootstrap {
             // Server has yet to start
             // Register onDisable so players are properly kicked
             ServerLifecycleEvents.SERVER_STOPPING.register((server) -> onDisable());
+            if (geyserConfig.isCacheChunks()) {
+                UseBlockCallback.EVENT.register(GeyserFabricEvents::onPlayerBreak);
+            }
         } else {
             // Server has started and this is a reload
             startGeyser(this.server);
@@ -145,6 +152,8 @@ public class GeyserFabricMod implements ModInitializer, GeyserBootstrap {
         this.geyserPingPassthrough = GeyserLegacyPingPassthrough.init(connector);
 
         this.geyserCommandManager = new GeyserFabricCommandManager(connector);
+
+        this.worldManager = new GeyserFabricWorldManager(server);
 
         // Start command building
         // Set just "geyser" as the help command
@@ -193,6 +202,11 @@ public class GeyserFabricMod implements ModInitializer, GeyserBootstrap {
     @Override
     public Path getConfigFolder() {
         return dataFolder;
+    }
+
+    @Override
+    public GeyserFabricWorldManager getWorldManager() {
+        return worldManager;
     }
 
     @Override
