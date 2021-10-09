@@ -27,6 +27,7 @@ package org.geysermc.platform.fabric;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import net.fabricmc.loader.api.FabricLoader;
+import net.fabricmc.loader.api.ModContainer;
 import org.geysermc.connector.FloodgateKeyLoader;
 import org.geysermc.connector.configuration.GeyserJacksonConfiguration;
 
@@ -36,9 +37,9 @@ public class GeyserFabricConfiguration extends GeyserJacksonConfiguration {
     @JsonIgnore
     private Path floodgateKeyPath;
 
-    public void loadFloodgate(GeyserFabricMod geyser) {
+    public void loadFloodgate(GeyserFabricMod geyser, ModContainer floodgate) {
         Path geyserDataFolder = geyser.getConfigFolder();
-        Path floodgateDataFolder = FabricLoader.getInstance().getConfigDir().resolve("floodgate");
+        Path floodgateDataFolder = floodgate != null ? FabricLoader.getInstance().getConfigDir().resolve("floodgate") : null;
 
         floodgateKeyPath = FloodgateKeyLoader.getKeyPath(this, floodgateDataFolder, geyserDataFolder, geyser.getGeyserLogger());
     }

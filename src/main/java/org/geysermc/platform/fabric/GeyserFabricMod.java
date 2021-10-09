@@ -155,7 +155,7 @@ public class GeyserFabricMod implements ModInitializer, GeyserBootstrap {
             geyserConfig.getRemote().setAuthType(AuthType.FLOODGATE);
         }
 
-        geyserConfig.loadFloodgate(this);
+        geyserConfig.loadFloodgate(this, floodgate.orElse(null));
 
         this.connector = GeyserConnector.start(PlatformType.FABRIC, this);
 
