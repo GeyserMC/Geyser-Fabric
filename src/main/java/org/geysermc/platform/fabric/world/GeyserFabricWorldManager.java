@@ -135,7 +135,7 @@ public class GeyserFabricWorldManager extends GeyserWorldManager {
         return false;
     }
 
-    public PlayerEntity getPlayer(GeyserSession session) {
+    private PlayerEntity getPlayer(GeyserSession session) {
         return server.getPlayerManager().getPlayer(session.getPlayerEntity().getUuid());
     }
 }
