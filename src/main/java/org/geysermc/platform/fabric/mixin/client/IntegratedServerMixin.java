@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 GeyserMC. http://geysermc.org
+ * Copyright (c) 2021 GeyserMC. http://geysermc.org
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -32,9 +32,9 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.integrated.IntegratedServer;
 import net.minecraft.text.LiteralText;
 import net.minecraft.world.GameMode;
-import org.geysermc.connector.utils.LanguageUtils;
 import org.geysermc.platform.fabric.GeyserFabricMod;
 import org.geysermc.platform.fabric.GeyserServerPortGetter;
+import org.geysermc.geyser.text.GeyserLocale;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -56,9 +56,9 @@ public class IntegratedServerMixin implements GeyserServerPortGetter {
             // If the LAN is opened, starts Geyser.
             GeyserFabricMod.getInstance().startGeyser((MinecraftServer) (Object) this);
             // Ensure player locale has been loaded, in case it's different from Java system language
-            LanguageUtils.loadGeyserLocale(this.client.options.language);
+            GeyserLocale.loadGeyserLocale(this.client.options.language);
             // Give indication that Geyser is loaded
-            this.client.player.sendMessage(new LiteralText(LanguageUtils.getPlayerLocaleString("geyser.core.start",
+            this.client.player.sendMessage(new LiteralText(GeyserLocale.getPlayerLocaleString("geyser.core.start",
                     this.client.options.language, "localhost", String.valueOf(this.lanPort))), false);
         }
     }

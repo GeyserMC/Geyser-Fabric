@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 GeyserMC. http://geysermc.org
+ * Copyright (c) 2021 GeyserMC. http://geysermc.org
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -28,8 +28,8 @@ package org.geysermc.platform.fabric;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
-import org.geysermc.connector.FloodgateKeyLoader;
-import org.geysermc.connector.configuration.GeyserJacksonConfiguration;
+import org.geysermc.geyser.FloodgateKeyLoader;
+import org.geysermc.geyser.configuration.GeyserJacksonConfiguration;
 
 import java.nio.file.Path;
 
