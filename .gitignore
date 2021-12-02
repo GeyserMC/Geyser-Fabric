@@ -18,6 +18,8 @@ local.properties
 # External tool builders
 .externalToolBuilders/
 
+.gradle
+
 # Locally stored "Eclipse launch configurations"
 *.launch
 
