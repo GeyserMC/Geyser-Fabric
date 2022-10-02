@@ -86,6 +86,9 @@ shadowJar {
     relocate("org.yaml", "org.geysermc.relocate.yaml") // https://github.com/CardboardPowered/cardboard/issues/139
     relocate("com.fasterxml.jackson", "org.geysermc.relocate.jackson")
     relocate("net.kyori", "org.geysermc.relocate.kyori")
+    relocate("com.google", "org.geysermc.relocate.google")
+    relocate("it.unimi.dsi.fastutil", "org.geysermc.relocate.fastutil")
+    relocate("org.slf4j", "org.geysermc.relocate.slf4j")
 }
 
 jar {
