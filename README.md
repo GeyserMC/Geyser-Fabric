@@ -1,3 +1,5 @@
+# This repository is now archived. You can now download Geyser-Fabric using the same link as other platforms: https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/
+
 # Geyser-Fabric
 
 [![forthebadge made-with-java](https://forthebadge.com/images/badges/made-with-java.svg)](https://java.com/)
